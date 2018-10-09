@@ -15,6 +15,9 @@
 		F7E7D4C1216B0B0900C2FAD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7D4C0216B0B0900C2FAD7 /* main.m */; };
 		F7E7D4CB216B0B0900C2FAD7 /* ui_exerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7D4CA216B0B0900C2FAD7 /* ui_exerciseTests.m */; };
 		F7E7D4D6216B0B0900C2FAD7 /* ui_exerciseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7D4D5216B0B0900C2FAD7 /* ui_exerciseUITests.m */; };
+		F7E7D4E6216C835E00C2FAD7 /* UIViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7D4E5216C835E00C2FAD7 /* UIViewTestViewController.m */; };
+		F7E7D4E9216CC63B00C2FAD7 /* UILableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7D4E8216CC63B00C2FAD7 /* UILableViewController.m */; };
+		F7E7D4EC216CCB7300C2FAD7 /* UIImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7D4EB216CCB7300C2FAD7 /* UIImageViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		F7E7D4D1216B0B0900C2FAD7 /* ui_exerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ui_exerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E7D4D5216B0B0900C2FAD7 /* ui_exerciseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ui_exerciseUITests.m; sourceTree = "<group>"; };
 		F7E7D4D7216B0B0900C2FAD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E7D4E4216C835E00C2FAD7 /* UIViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewTestViewController.h; sourceTree = "<group>"; };
+		F7E7D4E5216C835E00C2FAD7 /* UIViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewTestViewController.m; sourceTree = "<group>"; };
+		F7E7D4E7216CC63B00C2FAD7 /* UILableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILableViewController.h; sourceTree = "<group>"; };
+		F7E7D4E8216CC63B00C2FAD7 /* UILableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILableViewController.m; sourceTree = "<group>"; };
+		F7E7D4EA216CCB7300C2FAD7 /* UIImageViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewViewController.h; sourceTree = "<group>"; };
+		F7E7D4EB216CCB7300C2FAD7 /* UIImageViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +110,7 @@
 		F7E7D4B0216B0B0700C2FAD7 /* ui_exercise */ = {
 			isa = PBXGroup;
 			children = (
-				F7E7D4E3216B0B2600C2FAD7 /* 01 */,
+				F7E7D4E3216B0B2600C2FAD7 /* 01UILable */,
 				F7E7D4B1216B0B0700C2FAD7 /* AppDelegate.h */,
 				F7E7D4B2216B0B0700C2FAD7 /* AppDelegate.m */,
 				F7E7D4B4216B0B0700C2FAD7 /* ViewController.h */,
@@ -133,11 +142,17 @@
 			path = ui_exerciseUITests;
 			sourceTree = "<group>";
 		};
-		F7E7D4E3216B0B2600C2FAD7 /* 01 */ = {
+		F7E7D4E3216B0B2600C2FAD7 /* 01UILable */ = {
 			isa = PBXGroup;
 			children = (
+				F7E7D4E4216C835E00C2FAD7 /* UIViewTestViewController.h */,
+				F7E7D4E5216C835E00C2FAD7 /* UIViewTestViewController.m */,
+				F7E7D4E7216CC63B00C2FAD7 /* UILableViewController.h */,
+				F7E7D4E8216CC63B00C2FAD7 /* UILableViewController.m */,
+				F7E7D4EA216CCB7300C2FAD7 /* UIImageViewViewController.h */,
+				F7E7D4EB216CCB7300C2FAD7 /* UIImageViewViewController.m */,
 			);
-			path = 01;
+			path = 01UILable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E7D4B6216B0B0700C2FAD7 /* ViewController.m in Sources */,
+				F7E7D4EC216CCB7300C2FAD7 /* UIImageViewViewController.m in Sources */,
+				F7E7D4E6216C835E00C2FAD7 /* UIViewTestViewController.m in Sources */,
 				F7E7D4C1216B0B0900C2FAD7 /* main.m in Sources */,
+				F7E7D4E9216CC63B00C2FAD7 /* UILableViewController.m in Sources */,
 				F7E7D4B3216B0B0700C2FAD7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
