@@ -10,7 +10,6 @@
 
 @interface UIViewTestViewController ()
 
-
 @end
 
 @implementation UIViewTestViewController
@@ -36,20 +35,15 @@
     [readView addSubview:sg];
 
     [self.view removeFromSuperview];
-   
-    
-    UITextField *textField = [[UITextField alloc]init];
+
+
+    UITextField *textField = [[UITextField alloc] init];
     textField.keyboardType = UIKeyboardTypeNumberPad;
-    
-    
-    
-    NSInteger sum =  [textField.text integerValue];
-    
-    
-    
-    
-    
-    
+
+
+    NSInteger sum = [textField.text integerValue];
+
+
 }
 
 

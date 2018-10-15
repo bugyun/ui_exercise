@@ -10,11 +10,22 @@
 
 @interface ViewController ()
 //私有属性
+@property(nonatomic, strong) NSArray *dataArr;
 
 
 @end
 
 @implementation ViewController
+
+//重写 get 方
+- (NSArray *)dataArr {
+    //这里不能使用 self.dataArr 这样会调用 get 方法,会循环引用
+    if (_dataArr == nil) {
+        _dataArr = [[NSArray alloc] init];
+    }
+    return _dataArr;
+}
+
 
 /**
  * 1.系统调用
@@ -28,15 +39,10 @@
     button.backgroundColor = [UIColor redColor];
 //    [button setBackgroundImage:(nullable UIImage *)image forState:UIControlStateNormal];
     [button setTitle:@"你好" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
-    [button addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchDown];
 
 //    [self.view removeFromSuperview];
-}
-
-
-- (void)loadView {
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {

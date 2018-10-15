@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "001 (2).jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "player_btn_pause_normal@2x.png",
       "scale" : "2x"
     },
     {
