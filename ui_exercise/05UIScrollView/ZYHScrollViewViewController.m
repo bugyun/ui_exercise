@@ -210,6 +210,10 @@
      * userInfo : 传递参数
      */
     self.nsTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(nextPage:) userInfo:@"123" repeats:YES];
+    //作用:修改 timer 在 runloop 中的模式为 NSRunLoopCommonModes
+    //目的:不管主线程在做什么操作,都会分配一定的时间处理定时器
+    [[NSRunLoop currentRunLoop] addTimer:self.nsTimer forMode:NSRunLoopCommonModes];//界面追踪模式
+
 }
 
 - (void)stopTimer {
