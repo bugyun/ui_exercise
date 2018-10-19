@@ -24,6 +24,12 @@
         NSLog(@"写入成功");
     }
 
+    //获取 plist 文件的全路径
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *path = [bundle pathForResource:@"shops" ofType:@"plist"];
+    //加载 plist 文件
+    NSArray *shop = [NSArray arrayWithContentsOfFile:path];
+    NSLog(@"%@", shop);
 
 }
 

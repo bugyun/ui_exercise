@@ -72,6 +72,21 @@
     //1.10 添加监听的点击
     [button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpOutside];
     [self.view addSubview:button];
+
+    /**
+     - (CGRect)titleRectForContentRect:(CGRect)contentRect;
+     - (CGRect)imageRectForContentRect:(CGRect)contentRect;
+     */
+    [button titleRectForContentRect:CGRectMake(0, 0, 100, 100)];
+    [button imageRectForContentRect:CGRectMake(0, 0, 100, 100)];
+    //设置按钮的内边距
+    button.contentEdgeInsets = UIEdgeInsetsMake(-20, 0, 0, 0);
+    //设置图片的内边距
+    button.imageEdgeInsets = UIEdgeInsetsMake(-20, 0, 0, 0);
+    //设置标题的内边距
+    button.titleEdgeInsets = UIEdgeInsetsMake(-20, 0, 0, 0);
+
+
 }
 
 - (void)click:(UIButton *)button {

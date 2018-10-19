@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F795D73C2174AE4600B7F89A /* PListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D73B2174AE4600B7F89A /* PListViewController.m */; };
+		F795D73F2175958400B7F89A /* ZYHShop.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D73E2175958400B7F89A /* ZYHShop.m */; };
+		F795D7422175B6BC00B7F89A /* ZYHShopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D7412175B6BC00B7F89A /* ZYHShopView.m */; };
+		F795D7452175CB2200B7F89A /* CarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F795D7442175CB2200B7F89A /* CarView.xib */; };
+		F795D7482175CD2B00B7F89A /* ZYHCarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D7472175CD2B00B7F89A /* ZYHCarView.m */; };
+		F795D74B2175CD4600B7F89A /* ZYHCar.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D74A2175CD4600B7F89A /* ZYHCar.m */; };
+		F795D74F2178777600B7F89A /* ZYHKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D74E2178777600B7F89A /* ZYHKVCViewController.m */; };
+		F795D7522178791F00B7F89A /* ZYHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D7512178791F00B7F89A /* ZYHPerson.m */; };
+		F795D75621789C2F00B7F89A /* ZYHScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D75521789C2F00B7F89A /* ZYHScrollViewViewController.m */; };
 		F7E7D4B3216B0B0700C2FAD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7D4B2216B0B0700C2FAD7 /* AppDelegate.m */; };
 		F7E7D4B6216B0B0700C2FAD7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E7D4B5216B0B0700C2FAD7 /* ViewController.m */; };
 		F7E7D4B9216B0B0700C2FAD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E7D4B7216B0B0700C2FAD7 /* Main.storyboard */; };
@@ -42,6 +50,21 @@
 /* Begin PBXFileReference section */
 		F795D73A2174AE4600B7F89A /* PListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PListViewController.h; sourceTree = "<group>"; };
 		F795D73B2174AE4600B7F89A /* PListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PListViewController.m; sourceTree = "<group>"; };
+		F795D73D2175958400B7F89A /* ZYHShop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHShop.h; sourceTree = "<group>"; };
+		F795D73E2175958400B7F89A /* ZYHShop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHShop.m; sourceTree = "<group>"; };
+		F795D7402175B6BC00B7F89A /* ZYHShopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHShopView.h; sourceTree = "<group>"; };
+		F795D7412175B6BC00B7F89A /* ZYHShopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHShopView.m; sourceTree = "<group>"; };
+		F795D7442175CB2200B7F89A /* CarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarView.xib; sourceTree = "<group>"; };
+		F795D7462175CD2B00B7F89A /* ZYHCarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHCarView.h; sourceTree = "<group>"; };
+		F795D7472175CD2B00B7F89A /* ZYHCarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHCarView.m; sourceTree = "<group>"; };
+		F795D7492175CD4600B7F89A /* ZYHCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHCar.h; sourceTree = "<group>"; };
+		F795D74A2175CD4600B7F89A /* ZYHCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHCar.m; sourceTree = "<group>"; };
+		F795D74D2178777600B7F89A /* ZYHKVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHKVCViewController.h; sourceTree = "<group>"; };
+		F795D74E2178777600B7F89A /* ZYHKVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHKVCViewController.m; sourceTree = "<group>"; };
+		F795D7502178791F00B7F89A /* ZYHPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHPerson.h; sourceTree = "<group>"; };
+		F795D7512178791F00B7F89A /* ZYHPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHPerson.m; sourceTree = "<group>"; };
+		F795D75421789C2F00B7F89A /* ZYHScrollViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHScrollViewViewController.h; sourceTree = "<group>"; };
+		F795D75521789C2F00B7F89A /* ZYHScrollViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHScrollViewViewController.m; sourceTree = "<group>"; };
 		F7E7D4AE216B0B0700C2FAD7 /* ui_exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui_exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E7D4B1216B0B0700C2FAD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7E7D4B2216B0B0700C2FAD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,8 +121,44 @@
 			children = (
 				F795D73A2174AE4600B7F89A /* PListViewController.h */,
 				F795D73B2174AE4600B7F89A /* PListViewController.m */,
+				F795D73D2175958400B7F89A /* ZYHShop.h */,
+				F795D73E2175958400B7F89A /* ZYHShop.m */,
+				F795D7402175B6BC00B7F89A /* ZYHShopView.h */,
+				F795D7412175B6BC00B7F89A /* ZYHShopView.m */,
 			);
 			path = 02plist;
+			sourceTree = "<group>";
+		};
+		F795D7432175CB0000B7F89A /* 03自定义控件 */ = {
+			isa = PBXGroup;
+			children = (
+				F795D7442175CB2200B7F89A /* CarView.xib */,
+				F795D7462175CD2B00B7F89A /* ZYHCarView.h */,
+				F795D7472175CD2B00B7F89A /* ZYHCarView.m */,
+				F795D7492175CD4600B7F89A /* ZYHCar.h */,
+				F795D74A2175CD4600B7F89A /* ZYHCar.m */,
+			);
+			path = "03自定义控件";
+			sourceTree = "<group>";
+		};
+		F795D74C2178773B00B7F89A /* 04kvc kvo */ = {
+			isa = PBXGroup;
+			children = (
+				F795D74D2178777600B7F89A /* ZYHKVCViewController.h */,
+				F795D74E2178777600B7F89A /* ZYHKVCViewController.m */,
+				F795D7502178791F00B7F89A /* ZYHPerson.h */,
+				F795D7512178791F00B7F89A /* ZYHPerson.m */,
+			);
+			path = "04kvc kvo";
+			sourceTree = "<group>";
+		};
+		F795D75321789C0900B7F89A /* 05UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F795D75421789C2F00B7F89A /* ZYHScrollViewViewController.h */,
+				F795D75521789C2F00B7F89A /* ZYHScrollViewViewController.m */,
+			);
+			path = 05UIScrollView;
 			sourceTree = "<group>";
 		};
 		F7E7D4A5216B0B0700C2FAD7 = {
@@ -127,6 +186,9 @@
 			children = (
 				F7E7D4E3216B0B2600C2FAD7 /* 01UILable */,
 				F795D7392174AE2500B7F89A /* 02plist */,
+				F795D7432175CB0000B7F89A /* 03自定义控件 */,
+				F795D74C2178773B00B7F89A /* 04kvc kvo */,
+				F795D75321789C0900B7F89A /* 05UIScrollView */,
 				F7E7D4B1216B0B0700C2FAD7 /* AppDelegate.h */,
 				F7E7D4B2216B0B0700C2FAD7 /* AppDelegate.m */,
 				F7E7D4F021707DFD00C2FAD7 /* Assets.xcassets */,
@@ -235,6 +297,7 @@
 		F7E7D4A6216B0B0700C2FAD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZYH;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = finupgroup;
 				TargetAttributes = {
@@ -252,7 +315,7 @@
 				};
 			};
 			buildConfigurationList = F7E7D4A9216B0B0700C2FAD7 /* Build configuration list for PBXProject "ui_exercise" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -277,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E7D4BE216B0B0900C2FAD7 /* LaunchScreen.storyboard in Resources */,
+				F795D7452175CB2200B7F89A /* CarView.xib in Resources */,
 				F7E7D4F121707DFD00C2FAD7 /* Assets.xcassets in Resources */,
 				F7E7D4B9216B0B0700C2FAD7 /* Main.storyboard in Resources */,
 			);
@@ -303,11 +367,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F795D74B2175CD4600B7F89A /* ZYHCar.m in Sources */,
 				F7E7D4B6216B0B0700C2FAD7 /* ViewController.m in Sources */,
 				F7E7D4EC216CCB7300C2FAD7 /* UIImageViewViewController.m in Sources */,
+				F795D74F2178777600B7F89A /* ZYHKVCViewController.m in Sources */,
+				F795D7522178791F00B7F89A /* ZYHPerson.m in Sources */,
 				F7E7D4E6216C835E00C2FAD7 /* UIViewTestViewController.m in Sources */,
+				F795D73F2175958400B7F89A /* ZYHShop.m in Sources */,
 				F795D73C2174AE4600B7F89A /* PListViewController.m in Sources */,
 				F7E7D4C1216B0B0900C2FAD7 /* main.m in Sources */,
+				F795D7482175CD2B00B7F89A /* ZYHCarView.m in Sources */,
+				F795D75621789C2F00B7F89A /* ZYHScrollViewViewController.m in Sources */,
+				F795D7422175B6BC00B7F89A /* ZYHShopView.m in Sources */,
 				F7E7D4E9216CC63B00C2FAD7 /* UILableViewController.m in Sources */,
 				F7E7D4EF216F4ADF00C2FAD7 /* UIButtonViewController.m in Sources */,
 				F7E7D4B3216B0B0700C2FAD7 /* AppDelegate.m in Sources */,
