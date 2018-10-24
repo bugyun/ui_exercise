@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F700E124217F2F040060313D /* ZYHAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F700E123217F2F040060313D /* ZYHAutoLayoutViewController.m */; };
+		F74FD316217D9BCE00C4ABF0 /* ZYHScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74FD315217D9BCE00C4ABF0 /* ZYHScreenViewController.m */; };
+		F75D066121803B5C00ED1E24 /* ZYHTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F75D066021803B5C00ED1E24 /* ZYHTableViewViewController.m */; };
 		F795D73C2174AE4600B7F89A /* PListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D73B2174AE4600B7F89A /* PListViewController.m */; };
 		F795D73F2175958400B7F89A /* ZYHShop.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D73E2175958400B7F89A /* ZYHShop.m */; };
 		F795D7422175B6BC00B7F89A /* ZYHShopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F795D7412175B6BC00B7F89A /* ZYHShopView.m */; };
@@ -48,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F700E122217F2F040060313D /* ZYHAutoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHAutoLayoutViewController.h; sourceTree = "<group>"; };
+		F700E123217F2F040060313D /* ZYHAutoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHAutoLayoutViewController.m; sourceTree = "<group>"; };
+		F74FD314217D9BCE00C4ABF0 /* ZYHScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHScreenViewController.h; sourceTree = "<group>"; };
+		F74FD315217D9BCE00C4ABF0 /* ZYHScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHScreenViewController.m; sourceTree = "<group>"; };
+		F75D065F21803B5C00ED1E24 /* ZYHTableViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHTableViewViewController.h; sourceTree = "<group>"; };
+		F75D066021803B5C00ED1E24 /* ZYHTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHTableViewViewController.m; sourceTree = "<group>"; };
 		F795D73A2174AE4600B7F89A /* PListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PListViewController.h; sourceTree = "<group>"; };
 		F795D73B2174AE4600B7F89A /* PListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PListViewController.m; sourceTree = "<group>"; };
 		F795D73D2175958400B7F89A /* ZYHShop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHShop.h; sourceTree = "<group>"; };
@@ -116,6 +125,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F74FD313217D9BAD00C4ABF0 /* 06屏幕适配 */ = {
+			isa = PBXGroup;
+			children = (
+				F74FD314217D9BCE00C4ABF0 /* ZYHScreenViewController.h */,
+				F74FD315217D9BCE00C4ABF0 /* ZYHScreenViewController.m */,
+				F700E122217F2F040060313D /* ZYHAutoLayoutViewController.h */,
+				F700E123217F2F040060313D /* ZYHAutoLayoutViewController.m */,
+			);
+			path = "06屏幕适配";
+			sourceTree = "<group>";
+		};
+		F75D065E21803B3F00ED1E24 /* 07UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				F75D065F21803B5C00ED1E24 /* ZYHTableViewViewController.h */,
+				F75D066021803B5C00ED1E24 /* ZYHTableViewViewController.m */,
+			);
+			path = 07UITableView;
+			sourceTree = "<group>";
+		};
 		F795D7392174AE2500B7F89A /* 02plist */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +218,8 @@
 				F795D7432175CB0000B7F89A /* 03自定义控件 */,
 				F795D74C2178773B00B7F89A /* 04kvc kvo */,
 				F795D75321789C0900B7F89A /* 05UIScrollView */,
+				F74FD313217D9BAD00C4ABF0 /* 06屏幕适配 */,
+				F75D065E21803B3F00ED1E24 /* 07UITableView */,
 				F7E7D4B1216B0B0700C2FAD7 /* AppDelegate.h */,
 				F7E7D4B2216B0B0700C2FAD7 /* AppDelegate.m */,
 				F7E7D4F021707DFD00C2FAD7 /* Assets.xcassets */,
@@ -367,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75D066121803B5C00ED1E24 /* ZYHTableViewViewController.m in Sources */,
 				F795D74B2175CD4600B7F89A /* ZYHCar.m in Sources */,
 				F7E7D4B6216B0B0700C2FAD7 /* ViewController.m in Sources */,
 				F7E7D4EC216CCB7300C2FAD7 /* UIImageViewViewController.m in Sources */,
@@ -376,11 +408,13 @@
 				F795D73F2175958400B7F89A /* ZYHShop.m in Sources */,
 				F795D73C2174AE4600B7F89A /* PListViewController.m in Sources */,
 				F7E7D4C1216B0B0900C2FAD7 /* main.m in Sources */,
+				F700E124217F2F040060313D /* ZYHAutoLayoutViewController.m in Sources */,
 				F795D7482175CD2B00B7F89A /* ZYHCarView.m in Sources */,
 				F795D75621789C2F00B7F89A /* ZYHScrollViewViewController.m in Sources */,
 				F795D7422175B6BC00B7F89A /* ZYHShopView.m in Sources */,
 				F7E7D4E9216CC63B00C2FAD7 /* UILableViewController.m in Sources */,
 				F7E7D4EF216F4ADF00C2FAD7 /* UIButtonViewController.m in Sources */,
+				F74FD316217D9BCE00C4ABF0 /* ZYHScreenViewController.m in Sources */,
 				F7E7D4B3216B0B0700C2FAD7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

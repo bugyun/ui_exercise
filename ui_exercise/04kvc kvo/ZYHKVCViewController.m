@@ -31,6 +31,8 @@
     [person setValue:@"12" forKeyPath:@"money"];//自动类型转换
     //[person setValue:@"12" forKeyPath:@"dog.money"];//自动类型转换
     NSLog(@"%@------%f", person.name, person.money);
+//    [person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+
 }
 
 @end

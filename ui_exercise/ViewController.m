@@ -11,6 +11,7 @@
 @interface ViewController ()
 //私有属性
 @property(nonatomic, strong) NSArray *dataArr;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 
 @end
