@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CB2035ABF48D389E80BF715 /* ZYHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB20F2AD40E1554544CD580 /* ZYHTableViewCell.m */; };
 		F700E124217F2F040060313D /* ZYHAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F700E123217F2F040060313D /* ZYHAutoLayoutViewController.m */; };
 		F747B0B221806BBF00FEC696 /* cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = F747B0B121806BBF00FEC696 /* cars.plist */; };
 		F747B0B5218070B900FEC696 /* ZYHCarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F747B0B4218070B900FEC696 /* ZYHCarGroup.m */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CB2090E26CFCF491558AE83 /* ZYHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHTableViewCell.h; sourceTree = "<group>"; };
+		5CB20F2AD40E1554544CD580 /* ZYHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYHTableViewCell.m; sourceTree = "<group>"; };
 		F700E122217F2F040060313D /* ZYHAutoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHAutoLayoutViewController.h; sourceTree = "<group>"; };
 		F700E123217F2F040060313D /* ZYHAutoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHAutoLayoutViewController.m; sourceTree = "<group>"; };
 		F747B0B121806BBF00FEC696 /* cars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars.plist; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				F747B0B4218070B900FEC696 /* ZYHCarGroup.m */,
 				F747B0B6218072DC00FEC696 /* ZYHCar.h */,
 				F747B0B7218072DC00FEC696 /* ZYHCar.m */,
+				5CB20F2AD40E1554544CD580 /* ZYHTableViewCell.m */,
+				5CB2090E26CFCF491558AE83 /* ZYHTableViewCell.h */,
 			);
 			path = 07UITableView;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				F7E7D4EF216F4ADF00C2FAD7 /* UIButtonViewController.m in Sources */,
 				F74FD316217D9BCE00C4ABF0 /* ZYHScreenViewController.m in Sources */,
 				F7E7D4B3216B0B0700C2FAD7 /* AppDelegate.m in Sources */,
+				5CB2035ABF48D389E80BF715 /* ZYHTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
