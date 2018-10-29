@@ -70,6 +70,20 @@
     self.tableView.tableFooterView = [[UIView alloc] init];
     //根据 id 注册对应的 cell 类型为 UITableViewCell
     [self.tableView registerClass:[ZYHTableViewCell class] forCellReuseIdentifier:cellIdentifier];
+
+//
+//    //全局刷新
+//    [self.tableView reloadData];
+//
+//    //局部刷新,使用前提:保证之前的数组个数不变
+//    NSArray *indexPaths = @[[NSIndexPath indexPathForRow:0 inSection:0],
+//            [NSIndexPath indexPathForRow:1 inSection:0]];
+//    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+//    //插入刷新
+//    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+//    //删除刷新
+//    [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+
 }
 
 #pragma  mark  - UITableViewDataSource
@@ -148,7 +162,6 @@ static NSString *cellIdentifier = @"NotesCell";
     UIView *bg = [[UIView alloc] init];
     bg.backgroundColor = [UIColor blueColor];
     cell.backgroundView = bg;
-
     return cell;
 }
 
@@ -216,4 +229,46 @@ static NSString *cellIdentifier = @"NotesCell";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
 }
+
+#pragma mark - UITableViewDelegate 左滑删除
+
+/**
+ * 只要实现这个方法,就拥有左滑删除功能
+ */
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+
+}
+
+/**
+ * 修改默认 delete 按钮的问题
+ */
+- (nullable NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return @"删除";
+}
+
+/**
+ * 自定义按钮
+ */
+- (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"关注" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSLog(@"点击了按钮");
+    }];
+    action1.backgroundColor = [UIColor orangeColor];
+    UITableViewRowAction *action2 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"其他" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSLog(@"点击了按钮");
+    }];
+    return @[action1, action2];
+}
+
+- (void)test1 {
+    //编辑模式
+    self.tableView.editing = NO;
+    self.tableView.editing = YES;
+    [self.tableView setEditing:!self.tableView.isEditing animated:YES];
+    //编辑模式可以多选
+    self.tableView.allowsMultipleSelectionDuringEditing = YES;
+    //选中的数组
+    self.tableView.indexPathsForSelectedRows;
+}
+
 @end
