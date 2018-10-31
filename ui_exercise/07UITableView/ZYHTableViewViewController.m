@@ -271,4 +271,18 @@ static NSString *cellIdentifier = @"NotesCell";
     self.tableView.indexPathsForSelectedRows;
 }
 
+-(void) testButton{
+    UIButton *button = [[UIButton alloc] init];
+    //设置边框颜色
+    button.layer.borderColor = [UIColor orangeColor].CGColor;
+    //设置边框宽度
+    button.layer.borderWidth = 1.0;
+    //设置边框圆角半径
+    button.layer.cornerRadius = 1.0;
+    //设置边框为圆
+    button.layer.cornerRadius = button.frame.size.width * 0.5;
+    NSLog(@"%@",NSHomeDirectory());
+}
+
+
 @end

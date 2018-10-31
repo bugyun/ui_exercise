@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CB20214265D7F6C2D3DBBFF /* UIAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB20E509AE0577EBA726678 /* UIAppViewController.m */; };
 		5CB2035ABF48D389E80BF715 /* ZYHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB20F2AD40E1554544CD580 /* ZYHTableViewCell.m */; };
+		5CB2090FDA2280AC1BA96440 /* MyPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB20C1888390519C108ABC6 /* MyPerson.m */; };
 		F700E124217F2F040060313D /* ZYHAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F700E123217F2F040060313D /* ZYHAutoLayoutViewController.m */; };
 		F747B0B221806BBF00FEC696 /* cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = F747B0B121806BBF00FEC696 /* cars.plist */; };
 		F747B0B5218070B900FEC696 /* ZYHCarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F747B0B4218070B900FEC696 /* ZYHCarGroup.m */; };
@@ -54,8 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CB203EC1218895C14CC60B7 /* UIAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAppViewController.h; sourceTree = "<group>"; };
 		5CB2090E26CFCF491558AE83 /* ZYHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHTableViewCell.h; sourceTree = "<group>"; };
+		5CB20C1888390519C108ABC6 /* MyPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPerson.m; sourceTree = "<group>"; };
+		5CB20E509AE0577EBA726678 /* UIAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAppViewController.m; sourceTree = "<group>"; };
 		5CB20F2AD40E1554544CD580 /* ZYHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYHTableViewCell.m; sourceTree = "<group>"; };
+		5CB20F501301F6EA4FD8A339 /* MyPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPerson.h; sourceTree = "<group>"; };
 		F700E122217F2F040060313D /* ZYHAutoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHAutoLayoutViewController.h; sourceTree = "<group>"; };
 		F700E123217F2F040060313D /* ZYHAutoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHAutoLayoutViewController.m; sourceTree = "<group>"; };
 		F747B0B121806BBF00FEC696 /* cars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars.plist; sourceTree = "<group>"; };
@@ -67,6 +73,7 @@
 		F74FD315217D9BCE00C4ABF0 /* ZYHScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHScreenViewController.m; sourceTree = "<group>"; };
 		F75D065F21803B5C00ED1E24 /* ZYHTableViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHTableViewViewController.h; sourceTree = "<group>"; };
 		F75D066021803B5C00ED1E24 /* ZYHTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHTableViewViewController.m; sourceTree = "<group>"; };
+		F771DA38218827A500E362BA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F795D73A2174AE4600B7F89A /* PListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PListViewController.h; sourceTree = "<group>"; };
 		F795D73B2174AE4600B7F89A /* PListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PListViewController.m; sourceTree = "<group>"; };
 		F795D73D2175958400B7F89A /* ZYHShop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYHShop.h; sourceTree = "<group>"; };
@@ -133,6 +140,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CB20B9A3D4C78682A7B74AB /* 08UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				5CB20F501301F6EA4FD8A339 /* MyPerson.h */,
+				5CB20C1888390519C108ABC6 /* MyPerson.m */,
+				5CB203EC1218895C14CC60B7 /* UIAppViewController.h */,
+				5CB20E509AE0577EBA726678 /* UIAppViewController.m */,
+			);
+			path = 08UIApplication;
+			sourceTree = "<group>";
+		};
 		F74FD313217D9BAD00C4ABF0 /* 06屏幕适配 */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +251,7 @@
 				F795D75321789C0900B7F89A /* 05UIScrollView */,
 				F74FD313217D9BAD00C4ABF0 /* 06屏幕适配 */,
 				F75D065E21803B3F00ED1E24 /* 07UITableView */,
+				5CB20B9A3D4C78682A7B74AB /* 08UIApplication */,
 				F7E7D4B1216B0B0700C2FAD7 /* AppDelegate.h */,
 				F7E7D4B2216B0B0700C2FAD7 /* AppDelegate.m */,
 				F7E7D4F021707DFD00C2FAD7 /* Assets.xcassets */,
@@ -240,6 +259,7 @@
 				F7E7D4BC216B0B0900C2FAD7 /* LaunchScreen.storyboard */,
 				F7E7D4C0216B0B0900C2FAD7 /* main.m */,
 				F7E7D4B7216B0B0700C2FAD7 /* Main.storyboard */,
+				F771DA38218827A500E362BA /* PrefixHeader.pch */,
 				F7E7D4B4216B0B0700C2FAD7 /* ViewController.h */,
 				F7E7D4B5216B0B0700C2FAD7 /* ViewController.m */,
 			);
@@ -432,6 +452,8 @@
 				F74FD316217D9BCE00C4ABF0 /* ZYHScreenViewController.m in Sources */,
 				F7E7D4B3216B0B0700C2FAD7 /* AppDelegate.m in Sources */,
 				5CB2035ABF48D389E80BF715 /* ZYHTableViewCell.m in Sources */,
+				5CB2090FDA2280AC1BA96440 /* MyPerson.m in Sources */,
+				5CB20214265D7F6C2D3DBBFF /* UIAppViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +626,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HHLU6JKK4A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ui_exercise/PrefixHeader.pch;
 				INFOPLIST_FILE = ui_exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -621,6 +645,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HHLU6JKK4A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ui_exercise/PrefixHeader.pch;
 				INFOPLIST_FILE = ui_exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
