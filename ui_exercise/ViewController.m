@@ -11,7 +11,7 @@
 @interface ViewController ()
 //私有属性
 @property(nonatomic, strong) NSArray *dataArr;
-@property (weak, nonatomic) IBOutlet UIButton *button;
+@property(weak, nonatomic) IBOutlet UIButton *button;
 
 
 @end
@@ -72,6 +72,30 @@
  */
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+
+    }
+    NSLog(@"%s", __func__);
+    NSLog(@"%@", nibNameOrNil);
+    return self;
+}
+
+/**
+ * loadView 作用:用来创建控制器的 view
+ * 什么时候调用:当控制器的 view,第一次使用的时候调用.
+ *
+ * loadView底层原理:
+ * 1.先判断当前控制器是不是从 storyBoard 当中加载,如果是从 storyBoard 加载的控制器.那么它就会从 storyBoard 当中加载控制器的 view,设置当前控制器的 view
+ * 2.当前控制器是不是从 xib 当中加载的,如果是从 xib 当中加载的话,把 xib 当中指定的 view,设置为当前控制器的 view
+ * 3.如果也不是从 xib 加载的,它会创建空白的 view.
+ */
+- (void)loadView {
+    [super loadView];
+    NSLog(@"%s", __func__);
 }
 
 
