@@ -10,10 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZYHPerson : NSObject
+@interface ZYHPerson : NSObject <NSCoding>
 
 @property(nonatomic, copy) NSString *name;
 @property(nonatomic, assign) float money;
+
+- (instancetype)initWithCoder:(NSCoder *)coder;
+
+- (void)encodeWithCoder:(NSCoder *)coder;
 
 @end
 

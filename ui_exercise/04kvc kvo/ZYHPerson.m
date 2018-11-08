@@ -10,7 +10,20 @@
 
 @implementation ZYHPerson
 
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super init];
+    if (self) {
+        self.name = [coder decodeObjectForKey:@"self.name"];
+        self.money = [coder decodeFloatForKey:@"self.money"];
+    }
 
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.name forKey:@"self.name"];
+    [coder encodeFloat:self.money forKey:@"self.money"];
+}
 
 
 @end
