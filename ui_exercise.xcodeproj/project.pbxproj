@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5CB20214265D7F6C2D3DBBFF /* UIAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB20E509AE0577EBA726678 /* UIAppViewController.m */; };
 		5CB2035ABF48D389E80BF715 /* ZYHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB20F2AD40E1554544CD580 /* ZYHTableViewCell.m */; };
+		5CB207F60FBE70E621BD085C /* UIGestureRecognizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB204E766CE70734AA3C6F1 /* UIGestureRecognizerViewController.m */; };
 		5CB2090FDA2280AC1BA96440 /* MyPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB20C1888390519C108ABC6 /* MyPerson.m */; };
 		5CB209607BC0F08192E53B35 /* ZYHTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB20E64CE0EF16D17C55912 /* ZYHTransformViewController.m */; };
 		5CB20C29A1485756D4106CC9 /* NavUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB20EACB859FB91CC499548 /* NavUIViewController.m */; };
@@ -63,6 +64,8 @@
 /* Begin PBXFileReference section */
 		5CB203EC1218895C14CC60B7 /* UIAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAppViewController.h; sourceTree = "<group>"; };
 		5CB2045F39F2867E21F7A90E /* ZYHTransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHTransformViewController.h; sourceTree = "<group>"; };
+		5CB204E766CE70734AA3C6F1 /* UIGestureRecognizerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGestureRecognizerViewController.m; sourceTree = "<group>"; };
+		5CB20736CE0F6833D8A5B9A7 /* UIGestureRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGestureRecognizerViewController.h; sourceTree = "<group>"; };
 		5CB2078EABFAD05EF3281FD8 /* NavUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavUIViewController.h; sourceTree = "<group>"; };
 		5CB2086B733736752C289BA7 /* ZYHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHTabBarController.h; sourceTree = "<group>"; };
 		5CB2090E26CFCF491558AE83 /* ZYHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYHTableViewCell.h; sourceTree = "<group>"; };
@@ -155,6 +158,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CB2024E799E527936FADE02 /* 14UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				5CB20736CE0F6833D8A5B9A7 /* UIGestureRecognizerViewController.h */,
+				5CB204E766CE70734AA3C6F1 /* UIGestureRecognizerViewController.m */,
+			);
+			path = 14UIGestureRecognizer;
+			sourceTree = "<group>";
+		};
 		5CB20594CA77F8A7EDFF20FD /* 12UITabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +339,7 @@
 				F7E7D4B5216B0B0700C2FAD7 /* ViewController.m */,
 				5CB20594CA77F8A7EDFF20FD /* 12UITabBarController */,
 				5CB20CFC7FAFAE2C1C5627F4 /* 13transform */,
+				5CB2024E799E527936FADE02 /* 14UIGestureRecognizer */,
 			);
 			path = ui_exercise;
 			sourceTree = "<group>";
@@ -524,6 +537,7 @@
 				5CB20C29A1485756D4106CC9 /* NavUIViewController.m in Sources */,
 				5CB20E0A3F5469B0CF50E19F /* ZYHTabBarController.m in Sources */,
 				5CB209607BC0F08192E53B35 /* ZYHTransformViewController.m in Sources */,
+				5CB207F60FBE70E621BD085C /* UIGestureRecognizerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
